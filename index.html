@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        ENROLLMENT
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <center>
+      <h1 class="enrollment">
+           ENROLLMENT INFORMATION
+        </h1>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <br><label>First Name</label><label class="validation-error hide" id="firstNameValidationError">This field is required to fill up.</label>
+                        <br><input type="text" name="firstName" id="firstName">
+                    </div>
+                    <div>
+                        <br><label>Middle Name</label>
+                        <br><input type="text" name="middlename" id="middlename">
+                    </div>
+                    <div>
+                        <br><label>Last Name</label>
+                        <br><input type="text" name="lastname" id="lastname">
+                    </div>
+                    <div>
+                        <br><label>Age</label>
+                        <br><input type="text" name="age" id="age">
+                    </div>
+                    <div>
+                        <br><label>Gender</label>
+                        <br><input type="text" name="gender" id="gender">
+                    </div>
+                    <div>
+                        <br><label>Birthday</label>
+                        <br><input type="text" name="birthday" id="birthday">
+                    </div>
+                    <div>
+                        <br><label>Course</label>
+                        <br><input type="text" name="course" id="course">
+                    </div>
+                    <div>
+                        <br><label>School Year</label>
+                        <br><input type="text" name="schoolyear" id="schoolyear">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <div>
+                    
+                    <label for="searchInput"></label>
+                    <input type="text" id="searchInput" placeholder="">
+                    <button type="button" onClick="searchTable()">Search</button>
+                </div>
+                <table class="list" id="enrollmentinformation">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Middle Name</th>
+                            <th>Last Name</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Birthday</th>
+                            <th>Course</th>
+                            <th>School Year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</center>
+    <script src="script.js"></script>
+</body>
+</html>
